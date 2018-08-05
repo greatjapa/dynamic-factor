@@ -1,0 +1,13 @@
+{
+  "name": "kickflip",
+  "version": "0.0.1",
+  "description": "Calculate factor based on TTL",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Japa",
+  "license": "MIT",
+  "dependencies": {
+    "node-cache": "^4.2.0"
+  }
+}
