@@ -1,13 +1,17 @@
 {
   "name": "kickflip",
   "version": "0.0.1",
-  "description": "Calculate factor based on TTL",
+  "description": "Calculate dynamic factor based on TTL",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha ./test --recursive"
   },
   "author": "Japa",
   "license": "MIT",
   "dependencies": {
     "node-cache": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
   }
 }
