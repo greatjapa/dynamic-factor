@@ -5,7 +5,7 @@ Dynamic factor library provides a easy way to calculate factor that may change o
 
 ## How to install?
 ```bash
-npm install --save https://github.com/greatjapa/dynamic-factor.git
+npm install --save dynamic-factor
 ```
 
 ## How to use?
