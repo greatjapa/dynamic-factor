@@ -1,11 +1,11 @@
 {
   "name": "dynamic-factor",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Calculate dynamic factor based on TTL",
   "scripts": {
     "test": "mocha ./test --recursive"
   },
-  "author": "Japa",
+  "author": "Japa <greatjapa@gmail.com (https://github.com/greatjapa)",
   "license": "MIT",
   "dependencies": {
     "node-cache": "^4.2.0"
