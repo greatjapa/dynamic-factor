@@ -21,4 +21,7 @@ console.info(perMinute.get("page_views")) // 10
 
 perMinute.inc("page_views")
 console.info(perMinute.get("page_views")) // 10.1
+
+perMinute.inc("page_views", 2)
+console.info(perMinute.get("page_views")) // 10.3
 ```
