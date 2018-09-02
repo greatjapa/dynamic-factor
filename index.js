@@ -14,8 +14,11 @@ class Dynamic {
       this.cache = new NodeCache()
     }
 
-    inc(key) {
-      this.set(key, (this.cache.get(key) || 0) + 1)
+    inc(key, value=1) {
+      if (!Number.isInteger(value)) {
+        throw Error("value should be integer")
+      }
+      this.set(key, (this.cache.get(key) || 0) + value)
     }
 
     set(key, value) {
