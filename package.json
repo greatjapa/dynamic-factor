@@ -1,5 +1,5 @@
 {
-  "name": "kickflip",
+  "name": "dynamic-factor",
   "version": "0.0.1",
   "description": "Calculate dynamic factor based on TTL",
   "scripts": {
