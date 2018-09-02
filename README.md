@@ -1,4 +1,4 @@
-# dynamic-factor [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/greatjapa/dynamic-factor/blob/master/LICENSE)
+# dynamic-factor <a href="https://travis-ci.org/greatjapa/dynamic-factor"><img alt="Travis Status" src="https://travis-ci.org/greatjapa/dynamic-factor.svg?branch=master"></a>[![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](https://github.com/greatjapa/dynamic-factor/blob/master/LICENSE)
 
 
 ## How to use?
