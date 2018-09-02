@@ -24,4 +24,10 @@ console.info(perMinute.get("page_views")) // 10.1
 
 perMinute.inc("page_views", 2)
 console.info(perMinute.get("page_views")) // 10.3
+
+// 1 minute without changes
+
+console.info(perMinute.get("page_views")) // 0
 ```
+
+The example above shows how to use `Dynamic` class to calculate `page_views` factor. Note that the `page_views` key will be expired in 1 minute after the last change (line 25).  
