@@ -5,7 +5,7 @@ Dynamic factor library provides a easy way to calculate factor that may change o
 
 ## How to install?
 ```bash
-npm install --save dynamic-factor
+npm i --save dynamic-factor
 ```
 
 ## How to use?
@@ -14,20 +14,25 @@ npm install --save dynamic-factor
 const Dynamic = require('dynamic-factor');
 
 let perMinute = new Dynamic(60, 10); // ttl set to 1min, denominator = 10
-console.info(perMinute.get("page_views")) // 0
+console.info(perMinute.get("page_views"))    // undefined
+console.info(perMinute.factor("page_views")) // 0
 
 perMinute.set("page_views", 100)
-console.info(perMinute.get("page_views")) // 10
+console.info(perMinute.get("page_views"))    // 100
+console.info(perMinute.factor("page_views")) // 10
 
 perMinute.inc("page_views")
-console.info(perMinute.get("page_views")) // 10.1
+console.info(perMinute.get("page_views"))    // 101
+console.info(perMinute.factor("page_views")) // 10.1
 
 perMinute.inc("page_views", 2)
-console.info(perMinute.get("page_views")) // 10.3
+console.info(perMinute.get("page_views"))    // 103
+console.info(perMinute.factor("page_views")) // 10.3
 
 // 1 minute without changes
 
-console.info(perMinute.get("page_views")) // 0
+console.info(perMinute.get("page_views"))    // undefined
+console.info(perMinute.factor("page_views")) // 0
 ```
 
 The example above shows how to use `Dynamic` class to calculate `page_views` factor. Note that the `page_views` key will be expired in 1 minute after the last change.  
