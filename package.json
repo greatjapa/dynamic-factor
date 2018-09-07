@@ -5,10 +5,22 @@
   "scripts": {
     "test": "mocha ./test --recursive"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greatjapa/dynamic-factor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/greatjapa/dynamic-factor/issues"
+  },
+  "homepage": "https://github.com/greatjapa/dynamic-factor/blob/master/README.md",
   "keywords": [
     "dynamic",
     "factor",
-    "realtime"
+    "realtime",
+    "ttl",
+    "ttl-cache",
+    "time",
+    "timebased"
   ],
   "author": "greatjapa <greatjapa@gmail.com (https://github.com/greatjapa)",
   "license": "MIT",

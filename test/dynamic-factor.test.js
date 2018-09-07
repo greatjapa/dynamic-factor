@@ -60,7 +60,7 @@ describe('dynamic-factor test ', () => {
         }
     });
 
-    it('happy path', () => {
+    it('test inc', () => {
         let dynamic = new Dynamic(36000, 2)
         dynamic.factor("page_views").should.be.exactly(0);
 
@@ -81,6 +81,29 @@ describe('dynamic-factor test ', () => {
 
         dynamic.inc("page_views")
         dynamic.factor("page_views").should.be.exactly(3);
+    });
+
+    it('test desc', () => {
+        let dynamic = new Dynamic(36000, 2)
+        dynamic.factor("page_views").should.be.exactly(0);
+
+        dynamic.decr("page_views")
+        dynamic.factor("page_views").should.be.exactly(-0.5);
+
+        dynamic.decr("page_views")
+        dynamic.factor("page_views").should.be.exactly(-1);
+
+        dynamic.decr("page_views")
+        dynamic.factor("page_views").should.be.exactly(-1.5);
+
+        dynamic.decr("page_views")
+        dynamic.factor("page_views").should.be.exactly(-2);
+
+        dynamic.decr("page_views")
+        dynamic.factor("page_views").should.be.exactly(-2.5);
+
+        dynamic.decr("page_views")
+        dynamic.factor("page_views").should.be.exactly(-3);
     });
 
     it('large numbers', () => {

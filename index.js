@@ -21,6 +21,13 @@ class Dynamic {
       this.set(key, (this.cache.get(key) || 0) + value)
     }
 
+    decr(key, value=1) {
+      if (!Number.isInteger(value)) {
+        throw Error("value should be integer")
+      }
+      this.set(key, (this.cache.get(key) || 0) - value)
+    }
+
     set(key, value) {
       if (!Number.isInteger(value)) {
         throw Error("value should be integer")
