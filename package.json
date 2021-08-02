@@ -1,6 +1,6 @@
 {
   "name": "dynamic-factor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Calculate dynamic factor based on TTL",
   "scripts": {
     "test": "mocha ./test --recursive"
